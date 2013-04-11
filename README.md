@@ -3,6 +3,7 @@
 This page was created using jekyll-bootstrap. Documentation below.
 
 [Liquid help](https://github.com/mojombo/jekyll/wiki/Template-Data)
+[More Liquid Docs](http://nationbuilder.com/liquid_basics#variables)
 
 ## Jekyll-Bootstrap
 

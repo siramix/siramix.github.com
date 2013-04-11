@@ -1,0 +1,50 @@
+/*================================================================
+          App Grid Styles
+================================================================*/
+
+/*==============
+    Gridblock
+================*/  
+#block-views-app-grid-block h2 {
+  padding: 0px 5px 0px 5px;
+  display: none;
+}
+
+.gridblock {
+  margin-top: 0px;
+  margin-bottom: 25px;
+}
+
+.gridblock td{
+  text-align: center;
+  background-color: #efefef;
+  border: 1px solid #cfcfcf;
+  padding: 30px 0px 30px 0px;
+}
+
+.gridblock img{
+}
+
+.gridblock img:hover{
+  opacity:0.75;filter:alpha(opacity=75)
+}
+
+/* hides the last cell.  Only necessary while we have only 3 app cells */
+.gridblock .row-last .col-last {
+  border: none;
+}
+
+/* strictly for the More to Come cell */
+.gridblock .row-last .col-3 a {
+  cursor: default;
+}
+
+/* strictly for the More to Come cell */
+.gridblock .row-last .col-3 img {
+  border: none;
+}
+
+/* remove bottom underline on grid cells */
+.gridblock a {
+  border: none;
+}
