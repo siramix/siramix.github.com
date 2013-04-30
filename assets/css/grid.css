@@ -48,3 +48,7 @@
 .gridblock a {
   border: none;
 }
+
+.gridblock table {
+  width: 800px;
+}

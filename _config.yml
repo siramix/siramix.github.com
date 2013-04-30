@@ -59,6 +59,7 @@ JB :
 
   # By default, the asset_path is automatically defined relative to BASE_PATH plus the enabled theme.
   # ex: [BASE_PATH]/assets/themes/[THEME-NAME]
+  # UPDATE: This actually just goes to /assets as we don't use theme switching
   #
   # Override this by defining an absolute path to assets here.
   # ex: 
