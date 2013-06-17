@@ -32,9 +32,9 @@ theme :
   -->
   </head>
 
-  <body>
+  <body data-spy="scroll" data-target=".bw-sidebar">
 
-    <div class="topbar navbar navbar-inverse">
+    <div class="topbar navbar navbar-inverse navbar-fixed-top">
       <div class="fill navbar-inner">
         <div class="container">
           <a class="brand" href="{{ HOME_PATH }}">{{ site.title }}</a>
@@ -63,6 +63,9 @@ theme :
     </div> <!-- /container -->
 
     {% include JB/analytics %}
+    <script src="{{ ASSET_PATH }}js/jquery-2.0.0.min.js"></script>
+    <script src="{{ ASSET_PATH }}js/script.js"></script>
+    <script type="text/javascript" src="{{ ASSET_PATH }}bootstrap/js/bootstrap.min.js"></script>
   </body>
 </html>
 

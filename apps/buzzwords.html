@@ -7,23 +7,20 @@ tagline: "The party game of creative description and intuitive guessing!"
 group: navigation
 ---
 {% include JB/setup %}
-<div class="container-fluid">
-  <div class="row-fluid">
-    <div class="span2">
-      <ul class="nav sidebar-nav">
-        <li class="active"><a href="#">Buzzwords</a></li>
-        <li class="divider-vertical"></li>
-        <li><a href="#">How to Play</a></li>
-        <li class="divider-vertical"></li>
-        <li><a href="#">FAQ</a></li>
-        <li class="divider-vertical"></li>
-        <li><a href="#">Open Source</a></li>
-        <li class="divider-vertical"></li>
-        <li><a href="#">Lite Version</a></li>
+<div class="container">
+  <div class="row">
+    <div class="span2 bw-sidebar">
+      <ul class="nav nav-list bw-sidenav affix" id="bw-navbar">
+        <li class="active"><a href="#bw-desc">Buzzwords</a></li>
+        <li><a href="#bw-howto">How to Play</a></li>
+        <li><a href="#bw-faq">FAQ</a></li>
+        <li><a href="#bw-opensource">Open Source</a></li>
       </ul>
     </div>
-    <div class="span10">
-      <div class="brief">
+
+    <div class="span6" >
+      <div class="app-section" id="bw-desc">
+        <h1>Buzzwords for Android</h1>
         <p>Take turns giving clues to your teammates to guess certain words, but watch out!  If any of your
            clues use one of five related words you will get buzzed!  The team that successfully guesses the
            most words by the final round wins!</p>
@@ -43,9 +40,125 @@ group: navigation
 
         <p>The words included in Buzzwords are meant to be fun for all ages and backgrounds!  We have plans
            to add additional card packs that will be catered towards different groups.  If you have suggestions
-         or concerns about our content please let us know at <a href="mailto:buzzwords@siramix.com">buzzwords@siramix.com</a>
+           or concerns about our content please let us know at <a href="mailto:buzzwords@siramix.com">buzzwords@siramix.com</a>
            or tweet us <a href="https://twitter.com/#!/siramixlabs">@siramixlabs</a>.</p>
       </div>
+
+      <div class="app-section" id="bw-howto">
+        <h1>How to Play</h1>        
+        <p>At its core, Buzzwords is a team game that pits friends against friends in cutthroat wordplay action. Here are the basics:</p>
+        <ul>
+          <li>Divide all players into teams of two or more.</li>
+          <li>Each turn, a team assigns a presenter who must try to get their team to guess as many secret words as possible without saying certain 'buzz' words.</li>
+          <li>An opposing player enforces the list of 'buzz' words.</li>
+          <li>Points are awarded for each successfully guessed word.</li>
+          <li>The team that has the most points at the end of the game wins!</li>
+        </ul>
+        <p>If you have any specific questions about game rules, see the <a href="buzzwords_faq">FAQ</a> section.</p>
+        <h1>Sample Game</h1>
+        <p>Sally and three of her close friends are out camping and realize they forgot to bring any games.
+           But Sally comes to the rescue and pulls out her Android phone with Buzzwords! The group
+           praises her foresight and excitedly divides up into two teams of two.</p>
+        <p>Sally opens the app and taps Play to enter the Game Setup screen.  The group divides into two teams, yellow and green, and 
+           Sally highlights those colors.</p>
+        <p>Since they want to each play 4 times they set it to 8 rounds (#teams X #rounds = #turns). 
+           Sally taps Start Game to play1</p>
+        <p>Sally starts off presenting for the Yellow Team and Rob, sitting to her left, monitors Sally
+           on behalf of the Green Team.  Sally's first word to present is Sandwich, which includes the
+           'buzz' words bread, butter, eat, lunch, and sub.  She starts by saying,</p>
+        <p><i>'OK...this is something you eat for lunch.'</i></p>
+        <p>Rob, who is an astute buzzer, calls her out on her multiple transgressions and Sally is forced to
+           hit the X button.</p>
+        <p>Sally unfortunately can't get her team to guess the next word and time runs up. Her turn
+           totals an embarassing -1 points.</p>
+        <p>But Sally is given a chance for redemption. She passes the phone to her right, to Zack on the Green team
+           and then looks over his shoulder to call him out.</p>
+        <p>She's so on top of it that Zack ends up with -3 points. The group decides to cut him a break
+           and on the Turn Results screen they change one word to a "skip", making him only lose his team
+           2 points.</p>
+        <p>Zack passes the phone to his right and assumes the monitoring role, eager to exact his revenge.</p>
+        <p>And the excitement continues until the friends see the glimmer of dawn and realize they've had WAY TOO MUCH FUN!</p>
+      </div>
+      <div class="app-section" id="bw-faq">
+        <h1>Frequently Asked Questions</h1>
+        <p><strong>What age range is the game appropriate for?</strong><br/>
+            We designed the game to be appropriate for children. But it is a game that revolves around the clever 
+            use of the English language, after all, so it is likely going to be more fun for mature children and adults.</p>
+        <p><strong>Is it okay to say a buzz word after a guesser has used it?</strong><br/>
+            Yes. As long as a guesser says the word before the presenter, the word is then fair game for the presenter 
+            to use it. This allows presenters to chain clues up to the word that they are trying to get people to guess.</p>
+        <p><strong>Can the presenter substitute in nonsense words for buzz words?</strong><br/>
+            Definitely. Just be reasonable about it -- don't use anything close to the word you are substituting.
+            For example, don't replace buzz words with nonsense words that rhyme with the buzz words or have the same
+            number of syllables. Really, it's best to just use something like "blank" or "blah" to avoid any unfair
+            leading.</p>
+        <p><strong>Skipping is lame. Can we prevent people from doing it?</strong><br/>
+            Yes, because some households (not ours) frown upon skipping, we made it so that you can disable skipping
+            from the Settings screen. Additionally, under <i>Advanced House Rules</i> you can change the points
+            that skipping (and right and wrong) adds or subtracts.</p>
+        <p><strong>If a buzz word or guess word is an acronym are we allowed to say any of the words the acronym
+            stands for?</strong><br/>
+            A good, but admittedly broad, rule of thumb is if the game is trivialized by a certain behavior, it's
+            probably not allowed. So the short answer is no. The game would be too easy if people could turn buzz
+            words into acronyms or just say what an acronym stands for.</p>
+      </div>
+
+      <div class="app-section" id="bw-opensource">
+        <h1>Open Source Game</h1>
+        <p>We believe in the Open Source movement and want to do our part to foster sharing within the game community. Part of the reason 
+           we decided to develop for Android first instead of iOS was because the platform is <i>mostly</i> open.</p>
+        <p>Buzzwords code is published under the <a href="http://www.gnu.org/licenses/gpl.html">GNU Public License</a> and is freely 
+           available to the public on <a href="https://github.com/siramix/buzzwords">Github</a>.  This license allows anyone to copy, 
+           modify, or share our code provided it is licensed under the GNU Public License v3.  The only piece of our app that is excluded 
+           from this license is the XML file that stores the deck of slides (key words and buzz words).  Licensing our app this way 
+           allows us to give back to the Android community without precluding our ability to profit from the app.  We wanted the 
+           community to be able to see a fully functional Android app rather than just the snipets of code that developers typically 
+           share, and we put a deliberate effort into using best practices throughout our development.</p>
+        <p>If you are a fan of Buzzwords and are interested in using or just checking out our code we would love to hear from you. Let 
+           us know at <a href="mailto:buzzwords@siramix.com">buzzwords@siramix.com</a>, or 
+           <a href="https://www.facebook.com/buzzwordsapp"></a> on Facebook and follow us on 
+           <a href="https://github.com/siramix">Github</a>.</p>
+      </div>
+
+    </div>
+
+    <div id="bwCarousel" class="span4 carousel slide">
+      <ol class="carousel-indicators">
+        <li data-target="#bwCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#bwCarousel" data-slide-to="1"></li>
+        <li data-target="#bwCarousel" data-slide-to="2"></li>
+        <li data-target="#bwCarousel" data-slide-to="3"></li>
+        <li data-target="#bwCarousel" data-slide-to="4"></li>
+        <li data-target="#bwCarousel" data-slide-to="5"></li>
+        <li data-target="#bwCarousel" data-slide-to="6"></li>
+      </ol>
+      <!-- Carousel items -->
+      <div class="carousel-inner">
+        <div class="active item">
+          <img src="{{ ASSET_PATH }}images/bw-carousel/title.png" alt="bwtitle"/>
+        </div>
+        <div class="item">
+          <img src="{{ ASSET_PATH }}images/bw-carousel/gamesetup-fourteams.png" alt="bwtitle"/>
+        </div>
+        <div class="item">
+          <img src="{{ ASSET_PATH }}images/bw-carousel/green-turn-howToPlay.png" alt="howtoplay"/>
+        </div>
+        <div class="item">
+          <img src="{{ ASSET_PATH }}images/bw-carousel/blue-turn-houseRules.png" alt="houserules"/>
+        </div>
+        <div class="item">
+          <img src="{{ ASSET_PATH }}images/bw-carousel/red-turn-gestures.png" alt="gestures"/>
+        </div>
+        <div class="item">
+          <img src="{{ ASSET_PATH }}images/bw-carousel/turn-summary-review.png" alt="review"/>
+        </div>
+        <div class="item">
+          <img src="{{ ASSET_PATH }}images/bw-carousel/buzzmode-annoy.png" alt="buzzmode"/>
+        </div>
+      </div>
+      <!-- Carousel nav -->
+      <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+      <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
     </div>
   </div>
 </div>
