@@ -4,10 +4,14 @@ title: Siramix Labs
 tagline: Mobile App Developer
 ---
 {% include JB/setup %}
+<div class="row">
+  <div class="span10 offset1">
+    <h2>Mobile Games</h2>
 
-<h2>Mobile Games</h2>
+    {% include blocks/appgrid.html %}
 
-{% include blocks/appgrid.html %}
-
-{% assign posts_collate = site.posts %}
-{% include JB/posts_collate %}
+    <div class="blog-content">
+      {% assign posts_collate = site.posts %}
+      {% include JB/posts_collate %}
+    </div>
+</div>

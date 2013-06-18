@@ -6,7 +6,9 @@ group: navigation
 ---
 {% include JB/setup %}
 
-<p>This is where we will post ideas and thoughts</p>
-
-{% assign posts_collate = site.posts %}
-{% include JB/posts_collate %}
+<div class="row">
+  <div class="span10 offset1 blog-content">
+    {% assign posts_collate = site.posts %}
+    {% include JB/posts_collate %}
+  </div>
+</div>
