@@ -8,7 +8,6 @@ We'll store style overrides to the bootstrap style here.
 }
 
 .content {
-  padding-top: 70px;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -16,11 +15,26 @@ footer {
   margin-top: 20px;
 }
 
-/* Page header tweaks */
 .page-header {
+  background-color: #555;
+  padding: 40px 20px 10px;
+  text-align: center;
+  color: #ddd;
+  text-shadow: 0 1px 3px rgba(0,0,0,.4), 0 0 30px rgba(0,0,0,.075);
+}
+
+@media (max-width: 979px) {
+  .page-header {
+    padding-top: 10px;
+    margin-top: 0;
+  }
+  .navbar-fixed-top {
+    margin-bottom: 0;
+  }
+}
+
+.post-header {
   background-color: #fff;
-  padding: 20px 20px 10px;
-  margin: -20px -20px 20px;
   text-align: center;
 }
 
@@ -30,33 +44,85 @@ footer {
 
 .navbar-inverse .brand {
   color: #fff;
-  padding: 7px 30px 7px 0;
-  margin-left: -40px;
+  padding: 7px 30px 7px 7px;
+  position: relative;
+  float: left;
 }
 
 .brand-title {
   padding-top: 2px;
 }
 
-/* subnav ========================================================== */
-.subnav .active{
-  background-color:  blue;
+/* buzzwords subnav ================================================ */
+@media (max-width: 767px) {
+  .bw-sidenav {
+    display:none;
+  }
+}
+
+@media (max-width: 979px) and (min-width: 768px) {
+  .span2 {
+    width: 120px;
+    margin-left: 0;
+  }
+}
+
+.bw-sidenav>.active>a, .bw-sidenav>.active>a:hover{
+  background-color: #37A3CE;
+  border-color: #0B5679;
+}
+
+.bw-sidenav>li:last-of-type.active>a {
+  border-bottom: 5px solid #0B5679;
+}
+
+.bw-sidenav>li>a:hover {
+  background-color: #93C25B;
+}
+
+.bw-sidenav>li>a {
+  font-family: 'Anton', sans-serif;
+  font-size: 1.4em;
+  padding: 5px;
+  color: #fff;
+  background-color: #70a234;
+  border-left: 5px solid #244e26;
+  border-right: 5px solid #244e26;
+  border-top: 5px solid #244e26;;
+}
+
+.bw-sidenav>li:last-of-type a {
+  border-bottom: 5px solid #244e26;
+}
+
+/* carousel ======================================================== */
+.carousel-control {
+  margin-top: 0;
+}
+
+.carousel-indicators {
+  position: absolute;
+  bottom: 5px;
+  left: 5px;
+  top: 97%;
 }
 
 /* tag_box ======================================================== */
 
 .tag_box {
   list-style: none;
-  margin: 0;
   padding: 5px 0 ;
   overflow: hidden;
 }
+
 .tag_box li {
   line-height: 28px;
 }
+
 .tag_box.inline li {
   float: left;
 }
+
 .tag_box a {
   padding:  3px 6px;
   margin:  2px;
@@ -65,10 +131,12 @@ footer {
   border-radius:  3px;
   text-decoration: none;
 }
+
 .tag_box a span{
   vertical-align: super;
   font-size: 0.8em;
 }
+
 .tag_box a.active {
   background: #57A957;
   border: 1px solid #4C964D;
@@ -76,7 +144,9 @@ footer {
 }
 
 /* blog styles ===================================================== */
+
 .post-content {
+  margin-top: 20px;
   list-style-type: none;
   padding: 10px;
   border-right: 1px solid #ddd;
