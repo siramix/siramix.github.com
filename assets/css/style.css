@@ -33,6 +33,15 @@ footer {
   }
 }
 
+@media (min-width: 980px) {
+  .span2 {
+    width: 130px;
+  }
+  .carousel {
+    border: 5px solid black;
+  }
+}
+
 .post-header {
   background-color: #fff;
   text-align: center;
@@ -96,6 +105,7 @@ footer {
 }
 
 /* carousel ======================================================== */
+
 .carousel-control {
   margin-top: 0;
 }
