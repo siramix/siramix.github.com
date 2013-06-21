@@ -65,7 +65,10 @@ footer {
 /* buzzwords subnav ================================================ */
 @media (max-width: 767px) {
   .bw-sidenav {
-    display:none;
+    display: none;
+  }
+  .play-badge {
+    display: none;
   }
 }
 
@@ -102,6 +105,11 @@ footer {
 
 .bw-sidenav>li:last-of-type a {
   border-bottom: 5px solid #244e26;
+}
+
+.play-badge {
+  margin-top: 180px;
+  padding: 0;
 }
 
 /* carousel ======================================================== */
